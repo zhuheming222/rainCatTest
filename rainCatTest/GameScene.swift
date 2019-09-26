@@ -12,7 +12,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     private var lastUpdateTime : TimeInterval = 0
     private var currentRainDropSpawnTime : TimeInterval = 0
-    private var rainDropSpawnRate : TimeInterval = 0.5
+    private var rainDropSpawnRate : TimeInterval = 0.3
     
     let raindropTexture = SKTexture(imageNamed: "rain_drop")
     
@@ -81,17 +81,21 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     }
     
     private func spawnRaindrop() {
+        //let raindrop1 = Raindrop.newInstance(size: size,raindropTexture: raindropTexture)
+        
         let raindrop = SKSpriteNode(texture: raindropTexture)
         raindrop.physicsBody = SKPhysicsBody(texture: raindropTexture, size: raindrop.size)
         raindrop.physicsBody?.categoryBitMask = RainDropCategory
         raindrop.physicsBody?.contactTestBitMask = FloorCategory | WorldCategory
         
-        let xPosition = CGFloat(arc4random()).truncatingRemainder(dividingBy: size.width)
-        let yPosition = size.height + raindrop.size.height
+        let xPosition = CGFloat(arc4random()).truncatingRemainder(dividingBy: size.width/2)
+        let yPosition = size.height/2 + raindrop.size.height/2
         raindrop.position = CGPoint(x: xPosition, y: yPosition)
-        raindrop.zPosition = 2
+        raindrop.zPosition = 3
         
+       let raindrop2 = Raindrop.newInstance(size: size,raindropTexture: raindropTexture)
         addChild(raindrop)
+        addChild(raindrop2)
     }
     
     func didBegin(_ contact: SKPhysicsContact) {

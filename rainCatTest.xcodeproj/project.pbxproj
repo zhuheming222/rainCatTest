@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		045E49FC233D0C7A009E226A /* Raindrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E49FB233D0C7A009E226A /* Raindrop.swift */; };
 		04C5039E233B9BFF0057B6CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C5039D233B9BFF0057B6CB /* AppDelegate.swift */; };
 		04C503A2233B9BFF0057B6CB /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 04C503A1233B9BFF0057B6CB /* Actions.sks */; };
 		04C503A4233B9BFF0057B6CB /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C503A3233B9BFF0057B6CB /* GameScene.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		045E49FB233D0C7A009E226A /* Raindrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raindrop.swift; sourceTree = "<group>"; };
 		04C5039A233B9BFF0057B6CB /* rainCatTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rainCatTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C5039D233B9BFF0057B6CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04C503A1233B9BFF0057B6CB /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			children = (
 				04C503C3233B9D000057B6CB /* BackgroundNode.swift */,
 				04C503C4233B9D000057B6CB /* UmbrellaSprite.swift */,
+				045E49FB233D0C7A009E226A /* Raindrop.swift */,
 			);
 			name = sprites;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				045E49FC233D0C7A009E226A /* Raindrop.swift in Sources */,
 				04C503A4233B9BFF0057B6CB /* GameScene.swift in Sources */,
 				04C503C5233B9D000057B6CB /* BackgroundNode.swift in Sources */,
 				04C503C6233B9D000057B6CB /* UmbrellaSprite.swift in Sources */,

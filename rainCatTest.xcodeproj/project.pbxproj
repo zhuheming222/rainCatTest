@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		045E49FC233D0C7A009E226A /* Raindrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E49FB233D0C7A009E226A /* Raindrop.swift */; };
+		047B322D23437DD3000F4A4D /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B322C23437DD3000F4A4D /* SoundManager.swift */; };
+		047B323023437EAD000F4A4D /* FoodSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B322E23437EAD000F4A4D /* FoodSprite.swift */; };
+		047B323123437EAD000F4A4D /* CatSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B322F23437EAD000F4A4D /* CatSprite.swift */; };
+		04883B07234CDB200009A61A /* HudNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04883B06234CDB200009A61A /* HudNode.swift */; };
+		0495EBEA2347392400883BF5 /* resultShowSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0495EBE92347392400883BF5 /* resultShowSprite.swift */; };
 		04C5039E233B9BFF0057B6CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C5039D233B9BFF0057B6CB /* AppDelegate.swift */; };
 		04C503A2233B9BFF0057B6CB /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 04C503A1233B9BFF0057B6CB /* Actions.sks */; };
 		04C503A4233B9BFF0057B6CB /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C503A3233B9BFF0057B6CB /* GameScene.swift */; };
@@ -34,6 +39,11 @@
 
 /* Begin PBXFileReference section */
 		045E49FB233D0C7A009E226A /* Raindrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raindrop.swift; sourceTree = "<group>"; };
+		047B322C23437DD3000F4A4D /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		047B322E23437EAD000F4A4D /* FoodSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodSprite.swift; sourceTree = "<group>"; };
+		047B322F23437EAD000F4A4D /* CatSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatSprite.swift; sourceTree = "<group>"; };
+		04883B06234CDB200009A61A /* HudNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudNode.swift; sourceTree = "<group>"; };
+		0495EBE92347392400883BF5 /* resultShowSprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultShowSprite.swift; sourceTree = "<group>"; };
 		04C5039A233B9BFF0057B6CB /* rainCatTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rainCatTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C5039D233B9BFF0057B6CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04C503A1233B9BFF0057B6CB /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
@@ -49,7 +59,7 @@
 		04C503C3233B9D000057B6CB /* BackgroundNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundNode.swift; sourceTree = "<group>"; };
 		04C503C4233B9D000057B6CB /* UmbrellaSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UmbrellaSprite.swift; sourceTree = "<group>"; };
 		04C503C7233B9D540057B6CB /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		04C503CB233BB1D00057B6CB /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		04C503CB233BB1D00057B6CB /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; name = GameScene.sks; path = rainCatTest/GameScene.sks; sourceTree = SOURCE_ROOT; };
 		04C503CD233BC5860057B6CB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		04C503CE233BC5860057B6CB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +103,7 @@
 		04C5039C233B9BFF0057B6CB /* rainCatTest */ = {
 			isa = PBXGroup;
 			children = (
+				047B322C23437DD3000F4A4D /* SoundManager.swift */,
 				04C503CB233BB1D00057B6CB /* GameScene.sks */,
 				04C503CA233B9E0A0057B6CB /* sprites */,
 				04C503C9233B9DEC0057B6CB /* constants */,
@@ -128,9 +139,13 @@
 		04C503CA233B9E0A0057B6CB /* sprites */ = {
 			isa = PBXGroup;
 			children = (
+				047B322F23437EAD000F4A4D /* CatSprite.swift */,
+				047B322E23437EAD000F4A4D /* FoodSprite.swift */,
 				04C503C3233B9D000057B6CB /* BackgroundNode.swift */,
 				04C503C4233B9D000057B6CB /* UmbrellaSprite.swift */,
 				045E49FB233D0C7A009E226A /* Raindrop.swift */,
+				0495EBE92347392400883BF5 /* resultShowSprite.swift */,
+				04883B06234CDB200009A61A /* HudNode.swift */,
 			);
 			name = sprites;
 			sourceTree = "<group>";
@@ -240,10 +255,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				045E49FC233D0C7A009E226A /* Raindrop.swift in Sources */,
+				047B323023437EAD000F4A4D /* FoodSprite.swift in Sources */,
+				047B322D23437DD3000F4A4D /* SoundManager.swift in Sources */,
+				0495EBEA2347392400883BF5 /* resultShowSprite.swift in Sources */,
 				04C503A4233B9BFF0057B6CB /* GameScene.swift in Sources */,
 				04C503C5233B9D000057B6CB /* BackgroundNode.swift in Sources */,
 				04C503C6233B9D000057B6CB /* UmbrellaSprite.swift in Sources */,
+				04883B07234CDB200009A61A /* HudNode.swift in Sources */,
 				04C503A6233B9BFF0057B6CB /* GameViewController.swift in Sources */,
+				047B323123437EAD000F4A4D /* CatSprite.swift in Sources */,
 				04C5039E233B9BFF0057B6CB /* AppDelegate.swift in Sources */,
 				04C503C8233B9D540057B6CB /* Constants.swift in Sources */,
 			);

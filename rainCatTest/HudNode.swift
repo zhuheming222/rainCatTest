@@ -10,7 +10,7 @@ import SpriteKit
 
 class HudNode : SKNode {
     private let scoreKey = "RAINCAT_HIGHSCORE"
-    private let scoreNode = SKLabelNode(fontNamed: "PixelDigivolve")
+    private let scoreNode = SKLabelNode(fontNamed: "Ridin Dirty Regular")
     private(set) var score : Int = 0
     private var highScore : Int = 0
     private var showingHighScore = false
@@ -23,8 +23,8 @@ class HudNode : SKNode {
         
         scoreNode.text = "\(score)"
         scoreNode.fontSize = 70
-        scoreNode.position = CGPoint(x: size.width / 2, y: size.height - 100)
-        scoreNode.zPosition = 1
+        scoreNode.position = CGPoint(x: size.width / 4, y: size.height/2 - 100)
+        scoreNode.zPosition = 7
         
         addChild(scoreNode)
     }

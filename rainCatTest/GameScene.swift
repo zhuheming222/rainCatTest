@@ -24,9 +24,13 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     private let umbrellaNode = UmbrellaSprite.newInstance()
     private var catNode : CatSprite!
     private var foodNode : FoodSprite!
-    
+    private let hudNode = HudNode()
     //开始
     override func sceneDidLoad() {
+        //UIFontfamilyNames
+        hudNode.setup(size: size)
+        addChild(hudNode)
+        
         self.lastUpdateTime = 0
         
         backgroundNode.setup(size: size)
@@ -166,6 +170,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         switch otherBody.categoryBitMask {
         case RainDropCategory:
             catNode.hitByRain()
+            hudNode.resetPoints()
         case WorldCategory:
             spawnCat()
         default:
@@ -188,6 +193,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         catNode.position = CGPoint(x: randomPositionx, y: randomPositiony)
         
         addChild(catNode)
+        
+        hudNode.resetPoints()
     }
     
     //画食物
@@ -227,6 +234,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         case CatCategory:
             //TODO increment points
             print("fed cat")
+            hudNode.addPoint()
             //吃食物，让食物消失重新出现,猫也重新出现，分数增加，跳出对话框
             foodBody.node?.removeFromParent()
             foodBody.node?.removeAllActions()

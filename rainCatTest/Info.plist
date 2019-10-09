@@ -43,5 +43,10 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>RidinDirty.ttf</string>
+		<string>Ridin Dirty - TTF.ttf</string>
+	</array>
 </dict>
 </plist>

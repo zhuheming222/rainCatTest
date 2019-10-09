@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04057D4F234E2BEB0066CB2D /* RidinDirty.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04057D4E234E2BEB0066CB2D /* RidinDirty.ttf */; };
+		04057D52234E37690066CB2D /* Ridin Dirty - TTF.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04057D51234E37690066CB2D /* Ridin Dirty - TTF.ttf */; };
 		045E49FC233D0C7A009E226A /* Raindrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045E49FB233D0C7A009E226A /* Raindrop.swift */; };
 		047B322D23437DD3000F4A4D /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B322C23437DD3000F4A4D /* SoundManager.swift */; };
 		047B323023437EAD000F4A4D /* FoodSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047B322E23437EAD000F4A4D /* FoodSprite.swift */; };
@@ -38,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04057D4E234E2BEB0066CB2D /* RidinDirty.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = RidinDirty.ttf; sourceTree = "<group>"; };
+		04057D50234E33010066CB2D /* RidinDirty.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = RidinDirty.ttf; path = rainCatTest/RidinDirty.ttf; sourceTree = "<group>"; };
+		04057D51234E37690066CB2D /* Ridin Dirty - TTF.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Ridin Dirty - TTF.ttf"; path = "rainCatTest/fonts/Ridin Dirty - TTF.ttf"; sourceTree = "<group>"; };
 		045E49FB233D0C7A009E226A /* Raindrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raindrop.swift; sourceTree = "<group>"; };
 		047B322C23437DD3000F4A4D /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
 		047B322E23437EAD000F4A4D /* FoodSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodSprite.swift; sourceTree = "<group>"; };
@@ -85,6 +90,8 @@
 		04C50391233B9BFF0057B6CB = {
 			isa = PBXGroup;
 			children = (
+				04057D51234E37690066CB2D /* Ridin Dirty - TTF.ttf */,
+				04057D50234E33010066CB2D /* RidinDirty.ttf */,
 				04C5039C233B9BFF0057B6CB /* rainCatTest */,
 				04C503B7233B9C010057B6CB /* rainCatTestTests */,
 				04C5039B233B9BFF0057B6CB /* Products */,
@@ -103,6 +110,7 @@
 		04C5039C233B9BFF0057B6CB /* rainCatTest */ = {
 			isa = PBXGroup;
 			children = (
+				04057D4E234E2BEB0066CB2D /* RidinDirty.ttf */,
 				047B322C23437DD3000F4A4D /* SoundManager.swift */,
 				04C503CB233BB1D00057B6CB /* GameScene.sks */,
 				04C503CA233B9E0A0057B6CB /* sprites */,
@@ -232,6 +240,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04057D52234E37690066CB2D /* Ridin Dirty - TTF.ttf in Resources */,
+				04057D4F234E2BEB0066CB2D /* RidinDirty.ttf in Resources */,
 				04C503A9233B9BFF0057B6CB /* Main.storyboard in Resources */,
 				04C503CC233BB1D00057B6CB /* GameScene.sks in Resources */,
 				04C503AB233B9C010057B6CB /* Assets.xcassets in Resources */,
